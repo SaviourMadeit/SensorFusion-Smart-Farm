@@ -27,10 +27,10 @@ bme_sensor = bme280.BME280(I2C(0))
 '''
 
 # Actuator pins
-pump = Pin(15, Pin.OUT)
-lamp = Pin(13, Pin.OUT)
-vent = Pin(14, Pin.OUT)
-
+pump = Pin(15, Pin.OUT) # Water Pump
+lamp = Pin(13, Pin.OUT) # Artificial Lamp
+vent = Pin(14, Pin.OUT) # Ventilation Fan
+heat = Pin(12, Pin.OUT) # Heating device
 
 #Set all devices in OFF Mode
 pump.low()
@@ -270,10 +270,10 @@ def control_environment(crop_name, growth_stage):
     '''
     if soil_temp is not None:
         if soil_temp < stage_data["temp_min"] or soil_temp > stage_data["temp_max"]:
-            vent.high()  # Example control for temperature; adjust as needed
+            heat.high()  # Example control for temperature; adjust as needed
             print("Vent ON")
         else:
-            vent.low()
+            heat.low()
             print("Vent OFF")
 
     if soil_ph is not None:
