@@ -42,7 +42,7 @@ rtc = RTC()  # Initialize the RTC
 # File and network setup
 SENSOR_DATA_FILE = 'data.csv'  # File for storing sensor data
 CREDENTIALS_FILE = 'wifi_credentials.txt'  #Create Wifi-network Connection Accessibility
-BLYNK_AUTH = "xxxxxxxxxxxx"  # Blynk cloud token
+BLYNK_AUTH = "xxxxxxxxxxxx"  # Blynk cloud token replace xxxx with your blunk token
 blynk = BlynkLib.Blynk(BLYNK_AUTH)
 
 # Crop data storage
