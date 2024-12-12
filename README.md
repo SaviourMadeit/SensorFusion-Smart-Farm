@@ -1,7 +1,9 @@
 # SensorFusion Smart Farm
 
+![Github pic](https://github.com/user-attachments/assets/1a58c347-6902-4187-bd3e-ebbc52574a2f)
+                             
 The `SensorFusion Smart Farm` is a Raspberry Pi Pico W-based IoT project that integrates multiple sensors and actuators to monitor and manage a smart farming environment. The system leverages environmental data and user-defined crop parameters to automate irrigation, lighting, ventilation, and heating, ensuring optimal crop growth conditions at various growth stages.
-
+                                                                       
 ## Features
 
 - **Environmental Monitoring**:
